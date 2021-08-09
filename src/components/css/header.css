@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+header{
+  display: flex;
+  min-height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+header nav{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding:0 15px;
+  font-size: 24px;
+}
+
+
+
+nav ul li:hover{
+  color: crimson;
+  cursor: pointer;
+
+}
+#login{
+  background-color: crimson;
+  padding:7px 10px;
+  color:white;
+  border-radius:3px;
+  font-weight: 500;
+}
+
+nav .nav-icon{
+  position: relative;
+  cursor : pointer;
+  margin : 0px 5px;
+
+}
+
+.nav-icon img{
+  width : 30px;
+}
+nav .nav-icon span{
+  position: absolute;
+  background-color: crimson;
+  border-radius: 50%;
+  width :15px;
+  height: 15px;
+  padding:2px;
+  display: flex;
+  font-size: 15px;
+  justify-content:center;
+  align-items: center;
+  color:white;
+  top : -6px;
+  right:-6px;
+
+}
+
+header .menu,
+header .close{
+  display: none;
+}
+
+
+
+.logo{
+  display:flex;
+  justify-content : center;
+  align-items : center;
+  font-size : 30px;
+}
+.logo img{
+  width : 150px;
+}
+.logo span{
+  margin-left : -30px;
+  background:black;
+  color:white;
+  padding:5px;
+  height:fit-content;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+@media(max-width : 650px){
+  header{
+    position: relative;
+  }
+  header ul{
+    position :fixed;
+    top : 0px;
+    left : -100%;
+    display:flex;
+    width:50%;
+    height:100vh;
+    flex-direction: column;
+    background-color:white;
+    z-index : 10;
+    transition: 1s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px 0px;
+
+
+
+  }
+
+  header ul :nth-child(1){
+    margin-top:60px;
+  }
+
+  header ul li{
+
+    margin : 10px;
+    font-size : 20px;
+
+  }
+
+  header .close,
+  header .menu{
+    display: block;
+    font-size: 25px;
+  }
+
+
+  header .close{
+    position: absolute;
+    top:-50px;
+    right:10px;
+  }
+
+
+  .nav-icon img{
+    width : 25px;
+  }
+  .toggle{
+    left:0px;
+
+  }
+  .logo{
+    font-size:25px;
+  }
+
+  .logo img{
+    width : 105px;
+  }
+}

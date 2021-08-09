@@ -28,6 +28,13 @@ const Header = () => {
       <nav>
         
         <ul className = {toggle ? "toggle" : ""}>
+        <div className ="logo side-logo">
+        <img
+          src={logo}
+          alt="emoji"
+          border="0"
+        />
+      </div>
           <li>Products</li>
           <li>About</li>
           <li ><span id ="login">Login/Register</span></li>

@@ -11,8 +11,9 @@
 header{
   display: flex;
   min-height: 70px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin : 0 10px ;
   overflow: hidden;
 }
 
@@ -21,6 +22,7 @@ header nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 10px;
   
 
 }
@@ -29,7 +31,7 @@ nav ul li{
   list-style: none;
   display: inline-block;
   padding:0 15px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 
@@ -87,6 +89,9 @@ header .close{
   align-items : center;
   font-size : 30px;
 }
+.side-logo{
+  display: none;
+}
 .logo img{
   width : 150px;
 }
@@ -101,6 +106,8 @@ header .close{
 @media(max-width : 650px){
   header{
     position: relative;
+    justify-content: space-around;
+    padding:0px;
   }
   header ul{
     position :fixed;
@@ -121,7 +128,7 @@ header .close{
   }
 
   header ul :nth-child(1){
-    margin-top:60px;
+    margin-top:5px;
   }
 
   header ul li{
@@ -134,13 +141,13 @@ header .close{
   header .close,
   header .menu{
     display: block;
-    font-size: 25px;
+    font-size: 30px;
   }
 
 
   header .close{
     position: absolute;
-    top:-50px;
+    top:30px;
     right:10px;
   }
 
@@ -154,6 +161,9 @@ header .close{
   }
   .logo{
     font-size:25px;
+  }
+  .side-logo{
+    display: block;
   }
 
   .logo img{

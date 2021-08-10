@@ -1,0 +1,45 @@
+.sort_filter_btn {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .sort_filter_btn {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+    min-height: 40px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .sort_filter ul {
+    font-size: 40px;
+
+    background-color: white;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+      rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    justify-content: space-around;
+    transition: 0.2s linear;
+    width: 100vw;
+    height: 60%;
+    position: fixed;
+    bottom: -100%;
+  }
+
+  .sort_filter ul.active {
+    bottom: 40px;
+  }
+  .sort_filter ul li {
+    margin: 0px 20px;
+  }
+
+  .sort_filter ul i {
+    width: 20px;
+  }
+}
